@@ -95,6 +95,10 @@ class _WaitingPageState extends State<WaitingPage> {
       appBar: AppBar(
         title: Text('Listagem de Pacotes'),
         backgroundColor: Colors.orange,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pushNamed(context, '/home'),
+        ),
       ),
       body: Container(
         color: Colors.orange[50],

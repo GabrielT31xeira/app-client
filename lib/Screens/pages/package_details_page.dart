@@ -130,6 +130,10 @@ class _PackageDetailsPageState extends State<PackageDetailsPage> {
       appBar: AppBar(
         title: Text('Detalhes do Pacote'),
         backgroundColor: Colors.orange,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pushNamed(context, '/home'),
+        ),
       ),
       body: isLoading
           ? Center(child: CircularProgressIndicator())

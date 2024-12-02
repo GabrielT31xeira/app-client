@@ -98,6 +98,10 @@ class _ProposalPageState extends State<ProposalPage> {
       appBar: AppBar(
         title: Text('Propostas Enviadas'),
         backgroundColor: Colors.orange,
+        leading: IconButton(
+          icon: Icon(Icons.arrow_back, color: Colors.black),
+          onPressed: () => Navigator.pushNamed(context, '/home'),
+        ),
       ),
       body: Column(
         children: [
