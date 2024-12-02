@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
       title: 'PackDelivery',
       theme: ThemeData(
         primarySwatch: Colors.orange,
-        fontFamily: 'Work Sans',
+        // fontFamily: 'Work Sans',
       ),
       home: AuthCheck(),
 

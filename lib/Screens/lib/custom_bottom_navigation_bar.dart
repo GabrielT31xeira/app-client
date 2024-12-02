@@ -55,7 +55,7 @@ class _CustomBottomNavigationBarState extends State<CustomBottomNavigationBar> {
           ),
           const BottomNavigationBarItem(
             icon: Icon(Icons.share_location_rounded),
-            label: 'Localizar',
+            label: 'Em Viagem',
           ),
           BottomNavigationBarItem(
             icon: GestureDetector(

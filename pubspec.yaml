@@ -96,9 +96,3 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
-  fonts:
-    - family: WorkSans
-      fonts:
-        - asset: fonts/WorkSans-Regular.ttf
-        - asset: fonts/WorkSans-Bold.ttf
-          weight: 700

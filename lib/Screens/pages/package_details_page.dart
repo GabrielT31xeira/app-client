@@ -1,3 +1,4 @@
+import 'package:client/Screens/pages/proposal_page.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polyline_points/flutter_polyline_points.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
@@ -148,6 +149,23 @@ class _PackageDetailsPageState extends State<PackageDetailsPage> {
                     Text('Peso: ${travel['package']['weight']} ${travel['package']['metric_weight']}'),
                     Text('Dimensões: ${travel['package']['width']} ${travel['package']['metric_width']} x ${travel['package']['height']} ${travel['package']['metric_height']}'),
                     Text('Fragilidade: ${travel['package']['fragility']}'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        SizedBox(width: 10),
+                        TextButton(
+                          onPressed: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => ProposalPage(travelId: travel['id_travel']),
+                              ),
+                            );
+                          },
+                          child: Text('Ver Propostas', style: TextStyle(color: Colors.blue)),
+                        ),
+                      ],
+                    ),
                   ],
                 ),
               ),

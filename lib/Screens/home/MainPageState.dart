@@ -2,6 +2,7 @@ import 'package:client/Screens/home/HomePageState.dart';
 import 'package:client/Screens/identity/LoginPageState.dart';
 import 'package:client/Screens/lib/custom_bottom_navigation_bar.dart';
 import 'package:client/Screens/pages/search_page.dart';
+import 'package:client/Screens/pages/sended_packs.dart';
 import 'package:client/Screens/pages/waiting_page.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -42,6 +43,7 @@ class _MainPageState extends State<MainPage> {
     HomePage(),
     SearchPage(),
     WaitingPage(),
+    SendedPage()
   ];
 
   void _onItemTapped(int index) {
