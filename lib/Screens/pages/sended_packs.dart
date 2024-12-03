@@ -44,7 +44,7 @@ class _SendedPageState extends State<SendedPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Listagem de Pacotes Enviados'),
+        title: Text('Listagem de Pacotes Aceitos'),
         backgroundColor: Colors.orange,
         leading: IconButton(
           icon: Icon(Icons.arrow_back, color: Colors.black),
